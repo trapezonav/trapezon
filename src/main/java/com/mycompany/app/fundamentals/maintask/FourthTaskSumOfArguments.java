@@ -1,12 +1,12 @@
-package com.mycompany.app;
+package com.mycompany.app.fundamentals.maintask;
 
 public class FourthTaskSumOfArguments {
     public static void main(String[] args) {
         int sum=0;
         int result=1;
-        for (int i = 0; i < args.length; i++) {
-            sum +=Integer.parseInt(args[i]);
-            result *=Integer.parseInt(args[i]);
+        for (String arg : args) {
+            sum += Integer.parseInt(arg);
+            result *= Integer.parseInt(arg);
         }
         System.out.println(sum);
         System.out.println(result);

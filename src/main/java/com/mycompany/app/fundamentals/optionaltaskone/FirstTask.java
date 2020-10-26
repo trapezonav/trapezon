@@ -1,9 +1,9 @@
-package com.mycompany.app;
+package com.mycompany.app.fundamentals.optionaltaskone;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class OptionalTaskOneFirstTask {
+public class FirstTask {
     public static void main(String[] args) {
         int max = 0;
         int min = 0;
