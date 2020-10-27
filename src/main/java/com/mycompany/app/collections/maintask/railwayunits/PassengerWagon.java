@@ -8,7 +8,7 @@ public class PassengerWagon extends RailwayUnit {
     private LevelOfComfort levelOfComfort;
 
 
-    public PassengerWagon(String id, String model, int mileage, int price, int passengersCapacity, LevelOfComfort levelOfComfort) {
+    public PassengerWagon(int id, String model, int mileage, int price, int passengersCapacity, LevelOfComfort levelOfComfort) {
         super(id, model, mileage, price);
         this.passengersCapacity = passengersCapacity;
         this.levelOfComfort = levelOfComfort;

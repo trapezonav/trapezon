@@ -8,7 +8,7 @@ public class Locomotive extends RailwayUnit {
     private int maxSpeed;
 
 
-    public Locomotive(String id, String model, int mileage, int price, Engine engine, int maxSpeed) {
+    public Locomotive(int id, String model, int mileage, int price, Engine engine, int maxSpeed) {
         super(id, model, mileage, price);
         this.engine = engine;
         this.maxSpeed = maxSpeed;
@@ -24,6 +24,12 @@ public class Locomotive extends RailwayUnit {
 
     @Override
     public String toString() {
-        return null;
+        return "FreightWagon{" + "ID = " + super.getId() +
+                ", model=" + super.getModel() +
+                ", mileage=" + super.getMileage() +
+                ", price=" + super.getPrice() +
+                ", engine=" + engine+
+                ", maxSpeed=" + maxSpeed+
+                '}';
     }
 }

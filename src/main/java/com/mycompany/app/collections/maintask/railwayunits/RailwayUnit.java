@@ -1,12 +1,12 @@
 package com.mycompany.app.collections.maintask.railwayunits;
 
 public abstract class RailwayUnit {
-    private String id;
+    private int id;
     private String model;
     private int mileage;
     private int price;
 
-    public RailwayUnit(String id, String model, int mileage, int price) {
+    public RailwayUnit(int id, String model, int mileage, int price) {
         this.id = id;
         this.model = model;
         this.mileage = mileage;
@@ -29,7 +29,7 @@ public abstract class RailwayUnit {
         this.price = price;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
