@@ -24,7 +24,7 @@ public class Locomotive extends RailwayUnit {
 
     @Override
     public String toString() {
-        return "FreightWagon{" + "ID = " + super.getId() +
+        return "Locomotive{" + "ID = " + super.getId() +
                 ", model=" + super.getModel() +
                 ", mileage=" + super.getMileage() +
                 ", price=" + super.getPrice() +

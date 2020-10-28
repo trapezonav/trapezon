@@ -82,6 +82,6 @@ public class Train {
 
     @Override
     public String toString() {
-        return listOfUnits.toString();
+        return locomotive.toString() + " " + listOfUnits.toString();
     }
 }
