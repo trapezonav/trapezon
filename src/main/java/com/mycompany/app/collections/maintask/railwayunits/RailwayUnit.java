@@ -37,6 +37,5 @@ public abstract class RailwayUnit {
         return model;
     }
 
-    @Override
-    public abstract String toString();
+
 }

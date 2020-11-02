@@ -1,21 +1,21 @@
 package com.mycompany.app.collections.maintask.railwayunits;
 
-import com.mycompany.app.collections.maintask.models.Engine;
+import com.mycompany.app.collections.maintask.models.EngineType;
 
 public class Locomotive extends RailwayUnit {
 
-    private Engine engine;
+    private EngineType engineType;
     private int maxSpeed;
 
 
-    public Locomotive(int id, String model, int mileage, int price, Engine engine, int maxSpeed) {
+    public Locomotive(int id, String model, int mileage, int price, EngineType engineType, int maxSpeed) {
         super(id, model, mileage, price);
-        this.engine = engine;
+        this.engineType = engineType;
         this.maxSpeed = maxSpeed;
     }
 
-    public Engine getEngine() {
-        return engine;
+    public EngineType getEngine() {
+        return engineType;
     }
 
     public int getMaxSpeed() {
@@ -28,7 +28,7 @@ public class Locomotive extends RailwayUnit {
                 ", model=" + super.getModel() +
                 ", mileage=" + super.getMileage() +
                 ", price=" + super.getPrice() +
-                ", engine=" + engine+
+                ", engineType=" + engineType +
                 ", maxSpeed=" + maxSpeed+
                 '}';
     }
