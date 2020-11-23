@@ -9,6 +9,7 @@ public class SortingBooks {
             }
         }
     }
+
     public static void byPublisher(Book[] books, Publisher publisher){
         System.out.println("List of books by " + publisher.getName() + ":" );
         for (Book book:books) {

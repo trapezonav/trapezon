@@ -78,6 +78,7 @@ public class Train {
         return wagonsWithSetNumberOfPassengers;
     }
 
+
     @Override
     public String toString() {
         return locomotive.toString() + " " + listOfUnits.toString();

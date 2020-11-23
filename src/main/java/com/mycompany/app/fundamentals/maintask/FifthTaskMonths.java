@@ -47,4 +47,3 @@ public class FifthTaskMonths {
         System.out.println(nameOfMonth);
     }
 }
-
