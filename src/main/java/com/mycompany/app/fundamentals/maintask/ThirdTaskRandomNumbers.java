@@ -12,6 +12,5 @@ public class ThirdTaskRandomNumbers {
         for (int i = 0; i < quantity; i++) {
             System.out.print(random.nextInt() + " ");
         }
-
     }
 }

@@ -11,7 +11,6 @@ import java.util.ArrayList;
 
 public class Runner {
     public static void main(String[] args) {
-
         ArrayList<RailwayUnit> railwayUnitList = new ArrayList<>();
         railwayUnitList.add(new PassengerWagon(123, "Pl-E85",  12000, 5000, 200, LevelOfComfort.ECONOMY));
         railwayUnitList.add(new PassengerWagon(1, "SW-zx100", 7000, 20000, 50, LevelOfComfort.BUSINESS));
@@ -20,19 +19,11 @@ public class Runner {
         railwayUnitList.add(new PassengerWagon(111, "C-878", 12000, 4500, 100, LevelOfComfort.COMFORT));
         railwayUnitList.add(new BaggageWagon(444, "B-15D", 43000, 8000, 400));
         railwayUnitList.add(new BaggageWagon(456, "B-167", 74000, 7000, 350));
-
         Train train = new Train(new Locomotive(1234, "Power4000", 100000, 50000, EngineType.DIESEL, 120), railwayUnitList);
-
         System.out.println(train.getNumbersOfPassengers());
         System.out.println(train.getAmountOfBaggage());
         train.sortByLevelOfComfort();
         System.out.println(train);
         System.out.println(train.getWagonsWithSetNumberOfPassengers(100,250));
-
-
-
-
-
     }
-
 }

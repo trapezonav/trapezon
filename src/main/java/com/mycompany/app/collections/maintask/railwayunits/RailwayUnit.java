@@ -36,6 +36,4 @@ public abstract class RailwayUnit {
     public String getModel() {
         return model;
     }
-
-
 }

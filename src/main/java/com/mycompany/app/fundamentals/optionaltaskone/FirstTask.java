@@ -27,6 +27,5 @@ public class FirstTask {
             }
         }
         System.out.println("Самое длинное число : " + max +" Его длинна: "+ maxLength + " Самое короткое число: " + min + " Его длинна " + minLength );
-
     }
 }

@@ -9,11 +9,8 @@ import java.util.Scanner;
 
 public class WriteToFileInReversOrder {
     public static void main(String[] args) throws FileNotFoundException {
-
-        File file = new File("list.txt");
-
+        File file = new File("src/main/resources/list.txt");
         Scanner scanner = new Scanner(file);
-
         List <String> list = new ArrayList<>();
 
         while (scanner.hasNext()){

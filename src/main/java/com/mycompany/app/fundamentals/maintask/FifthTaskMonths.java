@@ -43,7 +43,6 @@ public class FifthTaskMonths {
             case 12: nameOfMonth="Декабрь";
             break;
             default: nameOfMonth="Не верный номер месяца";
-
         }
         System.out.println(nameOfMonth);
     }

@@ -23,6 +23,5 @@ public class SecondTask {
             }
         }
         System.out.println(Arrays.toString(numbers));
-
     }
 }

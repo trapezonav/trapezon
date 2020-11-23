@@ -1,7 +1,6 @@
 package com.mycompany.app.collections.maintask.railwayunits;
 
 public class BaggageWagon extends RailwayUnit {
-
     private int amountOfBaggage;
 
     public BaggageWagon(int id, String model, int mileage, int price, int amountOfBaggage) {

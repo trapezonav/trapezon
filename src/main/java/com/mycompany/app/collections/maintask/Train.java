@@ -11,7 +11,6 @@ import java.util.Comparator;
 
 
 public class Train {
-
     private Locomotive locomotive;
     private ArrayList<RailwayUnit> listOfUnits;
 
@@ -78,7 +77,6 @@ public class Train {
         }
         return wagonsWithSetNumberOfPassengers;
     }
-
 
     @Override
     public String toString() {

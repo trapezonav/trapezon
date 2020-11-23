@@ -1,7 +1,6 @@
 package com.mycompany.app.collections.maintask.railwayunits;
 
 public class FreightWagon extends RailwayUnit {
-
     private int maxLoadCapacity;
 
     public FreightWagon(int id, String model, int mileage, int price, int maxLoadCapacity) {
