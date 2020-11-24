@@ -5,10 +5,8 @@ import com.mycompany.app.collections.maintask.railwayunits.BaggageWagon;
 import com.mycompany.app.collections.maintask.railwayunits.Locomotive;
 import com.mycompany.app.collections.maintask.railwayunits.PassengerWagon;
 import com.mycompany.app.collections.maintask.railwayunits.RailwayUnit;
-
 import java.util.ArrayList;
 import java.util.Comparator;
-
 
 public class Train {
     private Locomotive locomotive;
@@ -59,8 +57,14 @@ public class Train {
         listOfUnits.sort(new Comparator<RailwayUnit>() {
             @Override
             public int compare(RailwayUnit o1, RailwayUnit o2) {
-                LevelOfComfort o1level = o1 instanceof PassengerWagon ? ((PassengerWagon) o1).getComfortLevel(): LevelOfComfort.NONE;
-                LevelOfComfort o2level = o2 instanceof PassengerWagon ? ((PassengerWagon) o2).getComfortLevel(): LevelOfComfort.NONE;
+                if(!(o1 instanceof PassengerWagon)){
+                    return -1;
+                }
+                if (!(o2 instanceof PassengerWagon)){
+                    return 1;
+                }
+                LevelOfComfort o1level = ((PassengerWagon) o1).getComfortLevel();
+                LevelOfComfort o2level = ((PassengerWagon) o2).getComfortLevel();
                 return o1level.compareTo(o2level);
             }
         });
@@ -77,7 +81,6 @@ public class Train {
         }
         return wagonsWithSetNumberOfPassengers;
     }
-
 
     @Override
     public String toString() {
